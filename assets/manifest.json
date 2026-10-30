@@ -10,32 +10,32 @@
     49.97
    ],
    "thickness": 1.59,
-   "components": 335,
+   "components": 408,
    "zones": [
     {
      "id": "bottom-z0",
-     "tris": 114018,
-     "parts": 119,
+     "tris": 145278,
+     "parts": 164,
      "inventory": {
-      "passive": 44,
-      "pad": 58,
-      "led": 2,
-      "header": 7,
+      "pad": 121,
+      "led": 1,
+      "passive": 34,
       "cap": 1,
       "fuse": 2,
-      "usb": 2,
       "inductor": 1,
+      "header": 1,
       "ic": 1,
+      "usb": 1,
       "power_ic": 1
      },
      "key": [
       {
-       "cls": "usb",
-       "footprint": "TYPE-C-SMD_LAIL-TYPE-C-16PIN-08-WT",
+       "cls": "pad",
+       "footprint": "BottomSilkscreen",
        "size": [
-        8.94,
-        4.37,
-        7.35
+        23.25,
+        0,
+        30.25
        ]
       },
       {
@@ -43,8 +43,26 @@
        "footprint": "TYPE-C-SMD_LAIL-TYPE-C-16PIN-08-WT",
        "size": [
         8.94,
-        3.73,
-        7.15
+        4.37,
+        7.58
+       ]
+      },
+      {
+       "cls": "pad",
+       "footprint": "TopSilkscreen",
+       "size": [
+        2.65,
+        0,
+        18.51
+       ]
+      },
+      {
+       "cls": "header",
+       "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
+       "size": [
+        2.15,
+        9.71,
+        17.16
        ]
       },
       {
@@ -55,63 +73,45 @@
         1.7,
         6.1
        ]
-      },
-      {
-       "cls": "ic",
-       "footprint": "VQFN-20_L4.6-W3.6-P0.50-BL",
-       "size": [
-        3.5,
-        1,
-        4.5
-       ]
-      },
-      {
-       "cls": "cap",
-       "footprint": "CAP-SMD_L3.5-W2.8-R-RD",
-       "size": [
-        3.7,
-        2,
-        2.8
-       ]
       }
      ],
+     "side": {
+      "front": 33,
+      "back": 8,
+      "both": 2,
+      "frontTris": 115336,
+      "backTris": 22640,
+      "dominant": "front"
+     },
      "center": [
       1,
-      3.77,
-      -20.12
+      2.67,
+      -20
      ],
      "box": [
-      -22.1,
-      -0.45,
-      -23.95,
-      19.07,
-      11.67,
-      -2.71
+      -22.72,
+      -0.91,
+      -24.99,
+      19.33,
+      8.8,
+      5.63
      ],
      "size": [
-      41.17,
-      12.12,
-      21.24
+      42.05,
+      9.71,
+      30.61
      ],
-     "top": 11.67,
-     "side": {
-      "front": 68,
-      "back": 18,
-      "both": 0,
-      "frontTris": 91564,
-      "backTris": 13728,
-      "dominant": "front"
-     }
+     "top": 8.8
     },
     {
      "id": "bottom-z1",
-     "tris": 46426,
-     "parts": 39,
+     "tris": 73401,
+     "parts": 90,
      "inventory": {
-      "passive": 13,
-      "pad": 12,
-      "header": 8,
+      "pad": 71,
+      "passive": 11,
       "fpc": 3,
+      "header": 2,
       "ic": 2,
       "power_ic": 1
      },
@@ -126,6 +126,15 @@
        ]
       },
       {
+       "cls": "pad",
+       "footprint": "TopSilkscreen",
+       "size": [
+        2.65,
+        0,
+        18.51
+       ]
+      },
+      {
        "cls": "fpc",
        "footprint": "CONN-SMD_4P-P1.25_XUNPU_WAFER-GH1.25-4PWB",
        "size": [
@@ -135,74 +144,64 @@
        ]
       },
       {
-       "cls": "ic",
-       "footprint": "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
-       "size": [
-        2.9,
-        1.1,
-        2.8
-       ]
-      },
-      {
-       "cls": "header",
-       "footprint": "HDR-TH_2P-P2.00-V-M",
-       "size": [
-        2,
-        8.7,
-        4.01
-       ]
-      },
-      {
        "cls": "header",
        "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
        "size": [
         2.23,
         10.09,
-        2.23
+        17.82
+       ]
+      },
+      {
+       "cls": "fpc",
+       "footprint": "CONN-SMD_LAIL-PHC1.25-2P-01-PB-WT",
+       "size": [
+        5,
+        4.35,
+        5.76
        ]
       }
      ],
+     "side": {
+      "front": 13,
+      "back": 4,
+      "both": 2,
+      "frontTris": 53190,
+      "backTris": 16242,
+      "dominant": "front"
+     },
      "center": [
       -21.97,
       -2.1,
       4.46
      ],
      "box": [
-      -24.66,
+      -24.82,
       -4.2,
-      -18.23,
-      -8,
-      11.67,
-      19.37
+      -18.32,
+      -6.06,
+      9.17,
+      19.49
      ],
      "size": [
-      16.66,
-      15.87,
-      37.6
+      18.76,
+      13.37,
+      37.81
      ],
-     "top": 11.67,
-     "side": {
-      "front": 20,
-      "back": 29,
-      "both": 26,
-      "frontTris": 51467,
-      "backTris": 69745,
-      "dominant": "back"
-     }
+     "top": 9.17
     },
     {
      "id": "bottom-z2",
-     "tris": 134658,
-     "parts": 168,
+     "tris": 154034,
+     "parts": 118,
      "inventory": {
-      "passive": 34,
-      "pad": 126,
+      "pad": 82,
       "inductor": 2,
-      "header": 2,
+      "ic": 1,
+      "passive": 30,
       "cap": 1,
-      "mcu": 1,
       "osc": 1,
-      "ic": 1
+      "mcu": 1
      },
      "key": [
       {
@@ -210,7 +209,7 @@
        "footprint": "QFN-56_L7.0-W7.0-P0.40-TL-EP4.0",
        "size": [
         9.9,
-        0.85,
+        0.86,
         9.9
        ]
       },
@@ -225,20 +224,20 @@
       },
       {
        "cls": "pad",
-       "footprint": "QFN-56_L7.0-W7.0-P0.40-TL-EP4.0",
+       "footprint": "TopSilkscreen",
        "size": [
-        5.66,
-        0.01,
-        5.66
+        4.51,
+        0,
+        5.43
        ]
       },
       {
        "cls": "pad",
-       "footprint": "QFN-56_L7.0-W7.0-P0.40-TL-EP4.0",
+       "footprint": "TopSilkscreen",
        "size": [
-        5.66,
-        0.19,
-        5.66
+        4.4,
+        0,
+        4.03
        ]
       },
       {
@@ -251,43 +250,43 @@
        ]
       }
      ],
+     "side": {
+      "front": 30,
+      "back": 6,
+      "both": 0,
+      "frontTris": 127146,
+      "backTris": 21532,
+      "dominant": "front"
+     },
      "center": [
       0.3,
       2.02,
       12
      ],
      "box": [
-      -12.79,
+      -12.95,
       -0.8,
-      -3.8,
-      22.95,
-      11.3,
-      21.45
+      -4.52,
+      23.1,
+      3.66,
+      23.32
      ],
      "size": [
-      35.74,
-      12.1,
-      25.25
+      36.05,
+      4.46,
+      27.84
      ],
-     "top": 11.3,
-     "side": {
-      "front": 54,
-      "back": 7,
-      "both": 0,
-      "frontTris": 104526,
-      "backTris": 19376,
-      "dominant": "front"
-     }
+     "top": 3.66
     },
     {
      "id": "bottom-z3",
-     "tris": 26698,
-     "parts": 9,
+     "tris": 32683,
+     "parts": 36,
      "inventory": {
+      "pad": 28,
       "passive": 4,
-      "pad": 1,
-      "button": 2,
       "inductor": 1,
+      "button": 2,
       "rf": 1
      },
      "key": [
@@ -319,54 +318,69 @@
        ]
       },
       {
-       "cls": "inductor",
-       "footprint": "L0402-RD",
+       "cls": "pad",
+       "footprint": "TopSilkscreen",
        "size": [
-        1.09,
-        0.52,
-        1.09
+        2.07,
+        0,
+        1.63
        ]
       },
       {
        "cls": "pad",
-       "footprint": "R0402",
+       "footprint": "TopSilkscreen",
        "size": [
-        0.78,
-        0.04,
-        0.78
+        2.07,
+        0,
+        1.45
        ]
       }
      ],
+     "side": {
+      "front": 8,
+      "back": 0,
+      "both": 0,
+      "frontTris": 30946,
+      "backTris": 0,
+      "dominant": "front"
+     },
      "center": [
       7.39,
       2.21,
       22.45
      ],
      "box": [
-      2.98,
+      -2.98,
       1.09,
-      7.52,
+      7.32,
       25.48,
       3.39,
       24
      ],
      "size": [
-      22.5,
+      28.46,
       2.3,
-      16.48
+      16.68
      ],
-     "top": 3.39,
-     "side": {
-      "front": 9,
-      "back": 0,
-      "both": 0,
-      "frontTris": 26698,
-      "backTris": 0,
-      "dominant": "front"
-     }
+     "top": 3.39
     }
    ],
    "anchors": [
+    {
+     "kind": "CONN-SMD",
+     "cls": "fpc",
+     "zone": 1,
+     "pos": [
+      -21.22,
+      3.76,
+      2.09
+     ],
+     "size": [
+      5,
+      4.35,
+      5.76
+     ]
+    },
     {
      "kind": "HDR-TH",
      "cls": "header",
@@ -383,153 +397,18 @@
      ]
     },
     {
-     "kind": "CONN-SMD",
-     "cls": "fpc",
-     "zone": 1,
-     "pos": [
-      -21.97,
-      -2.1,
-      4.46
-     ],
-     "size": [
-      4.95,
-      4.2,
-      12
-     ]
-    },
-    {
-     "kind": "CONN-SMD",
-     "cls": "fpc",
-     "zone": 1,
-     "pos": [
-      -22.16,
-      3.76,
-      15.24
-     ],
-     "size": [
-      5,
-      4.35,
-      8.25
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      18,
-      6.44,
-      -1.64
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
      "kind": "HDR-TH",
      "cls": "header",
      "zone": 0,
      "pos": [
       18,
-      6.44,
-      -3.78
+      3.94,
+      -7
      ],
      "size": [
       2.15,
       9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -5.93
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -8.07
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -10.22
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -12.36
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -14.51
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      18,
-      6.44,
-      0.51
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
+      17.16
      ]
     },
     {
@@ -538,118 +417,13 @@
      "zone": 1,
      "pos": [
       -16,
-      6.63,
-      -12.57
+      4.13,
+      -7
      ],
      "size": [
       2.23,
       10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -10.34
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -8.11
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -5.89
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -3.66
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -1.43
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      0.8
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      -16,
-      6.63,
-      -14.8
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
+      17.82
      ]
     },
     {
@@ -668,168 +442,33 @@
      ]
     },
     {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
+     "kind": "CONN-SMD",
+     "cls": "fpc",
+     "zone": 1,
      "pos": [
-      1.75,
-      4.67,
-      -21.98
+      -22.16,
+      3.76,
+      15.24
      ],
      "size": [
-      0.3,
-      0.1,
-      2.2
+      5,
+      4.35,
+      8.25
      ]
     },
     {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
+     "kind": "CONN-SMD",
+     "cls": "fpc",
+     "zone": 1,
      "pos": [
-      1.75,
-      4.07,
-      -22.05
+      -21.97,
+      -2.1,
+      4.46
      ],
      "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      1.3,
-      4.67,
-      -21.98
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.2
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      1.3,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      0.7,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      0.25,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      3.65,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      -0.2,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      2.2,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      2.2,
-      4.67,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      -1.65,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
+      4.95,
+      4.2,
+      12
      ]
     },
     {
@@ -838,28 +477,13 @@
      "zone": 0,
      "pos": [
       1,
-      3.78,
-      -20.02
-     ],
-     "size": [
-      8.94,
-      3.73,
-      7.15
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "usb",
-     "zone": 0,
-     "pos": [
-      1,
-      3.77,
-      -20.12
+      2.67,
+      -20
      ],
      "size": [
       8.94,
       4.37,
-      7.35
+      7.58
      ]
     }
    ],
@@ -889,16 +513,16 @@
      "tone": "body"
     },
     {
-     "name": "mat_2_gold",
+     "name": "mat_2_solder",
      "color": [
-      0.3095,
-      0.1812,
-      0,
+      1,
+      1,
+      1,
       1
      ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
     },
     {
      "name": "mat_3_solder",
@@ -913,44 +537,20 @@
      "tone": "solder"
     },
     {
-     "name": "mat_4_solder",
+     "name": "mat_4_resin",
      "color": [
-      1,
-      1,
-      1,
+      0.0513,
+      0.0513,
+      0.0513,
       1
      ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
+     "metal": 0.1,
+     "rough": 0.62,
+     "tone": "resin"
     },
     {
      "name": "mat_5_resin",
      "color": [
-      0.0513,
-      0.0513,
-      0.0513,
-      1
-     ],
-     "metal": 0.1,
-     "rough": 0.62,
-     "tone": "resin"
-    },
-    {
-     "name": "mat_6_resin",
-     "color": [
-      0,
-      0,
-      0,
-      1
-     ],
-     "metal": 0.1,
-     "rough": 0.62,
-     "tone": "resin"
-    },
-    {
-     "name": "mat_7_resin",
-     "color": [
       0.0409,
       0.0409,
       0.0409,
@@ -961,7 +561,7 @@
      "tone": "resin"
     },
     {
-     "name": "mat_8_gold",
+     "name": "mat_6_gold",
      "color": [
       0.6584,
       0.4072,
@@ -973,7 +573,7 @@
      "tone": "gold"
     },
     {
-     "name": "mat_9_solder",
+     "name": "mat_7_solder",
      "color": [
       0.7758,
       0.7758,
@@ -985,7 +585,7 @@
      "tone": "solder"
     },
     {
-     "name": "mat_10_body",
+     "name": "mat_8_body",
      "color": [
       0.5972,
       0.6445,
@@ -997,23 +597,11 @@
      "tone": "body"
     },
     {
-     "name": "mat_11_resin",
+     "name": "mat_9_solder",
      "color": [
-      0.0194,
-      0.0194,
-      0.0194,
-      1
-     ],
-     "metal": 0.1,
-     "rough": 0.62,
-     "tone": "resin"
-    },
-    {
-     "name": "mat_12_solder",
-     "color": [
-      0.5271,
-      0.5271,
-      0.5271,
+      0.6038,
+      0.6038,
+      0.6038,
       1
      ],
      "metal": 0.78,
@@ -1021,115 +609,7 @@
      "tone": "solder"
     },
     {
-     "name": "mat_13_body",
-     "color": [
-      0.6795,
-      0.6308,
-      0.5271,
-      1
-     ],
-     "metal": 0.18,
-     "rough": 0.55,
-     "tone": "body"
-    },
-    {
-     "name": "mat_14_solder",
-     "color": [
-      0.6939,
-      0.6939,
-      0.6939,
-      1
-     ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
-    },
-    {
-     "name": "mat_15_body",
-     "color": [
-      0.8308,
-      0.7835,
-      0.6376,
-      1
-     ],
-     "metal": 0.18,
-     "rough": 0.55,
-     "tone": "body"
-    },
-    {
-     "name": "mat_16_solder",
-     "color": [
-      0.5647,
-      0.5333,
-      0.5029,
-      1
-     ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
-    },
-    {
-     "name": "mat_17_solder",
-     "color": [
-      0.402,
-      0.402,
-      0.402,
-      1
-     ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
-    },
-    {
-     "name": "mat_18_gold",
-     "color": [
-      0.8879,
-      0.5395,
-      0.0273,
-      1
-     ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
-    },
-    {
-     "name": "mat_19_solder",
-     "color": [
-      0.3763,
-      0.3763,
-      0.3763,
-      1
-     ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
-    },
-    {
-     "name": "mat_20_gold",
-     "color": [
-      1,
-      0.402,
-      0.2232,
-      1
-     ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
-    },
-    {
-     "name": "mat_21_gold",
-     "color": [
-      1,
-      0.4564,
-      0.2623,
-      1
-     ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
-    },
-    {
-     "name": "mat_22_gold",
+     "name": "mat_10_gold",
      "color": [
       0.2502,
       0.0999,
@@ -1141,7 +621,19 @@
      "tone": "gold"
     },
     {
-     "name": "mat_23_body",
+     "name": "mat_11_solder",
+     "color": [
+      0.6939,
+      0.6939,
+      0.6939,
+      1
+     ],
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
+    },
+    {
+     "name": "mat_12_body",
      "color": [
       0.162,
       0.162,
@@ -1151,6 +643,138 @@
      "metal": 0.18,
      "rough": 0.55,
      "tone": "body"
+    },
+    {
+     "name": "mat_13_solder",
+     "color": [
+      0.552,
+      0.552,
+      0.552,
+      1
+     ],
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
+    },
+    {
+     "name": "mat_14_gold",
+     "color": [
+      0.3095,
+      0.1812,
+      0,
+      1
+     ],
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
+    },
+    {
+     "name": "mat_15_gold",
+     "color": [
+      1,
+      0.402,
+      0.2232,
+      1
+     ],
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
+    },
+    {
+     "name": "mat_16_gold",
+     "color": [
+      1,
+      0.4564,
+      0.2623,
+      1
+     ],
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
+    },
+    {
+     "name": "mat_17_resin",
+     "color": [
+      0,
+      0,
+      0,
+      1
+     ],
+     "metal": 0.1,
+     "rough": 0.62,
+     "tone": "resin"
+    },
+    {
+     "name": "mat_18_solder",
+     "color": [
+      0.5271,
+      0.5271,
+      0.5271,
+      1
+     ],
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
+    },
+    {
+     "name": "mat_19_body",
+     "color": [
+      1,
+      0.9131,
+      0.7991,
+      1
+     ],
+     "metal": 0.18,
+     "rough": 0.55,
+     "tone": "body"
+    },
+    {
+     "name": "mat_20_resin",
+     "color": [
+      0.0194,
+      0.0194,
+      0.0194,
+      1
+     ],
+     "metal": 0.1,
+     "rough": 0.62,
+     "tone": "resin"
+    },
+    {
+     "name": "mat_21_body",
+     "color": [
+      0.6795,
+      0.6308,
+      0.5271,
+      1
+     ],
+     "metal": 0.18,
+     "rough": 0.55,
+     "tone": "body"
+    },
+    {
+     "name": "mat_22_gold",
+     "color": [
+      0.8879,
+      0.5395,
+      0.0273,
+      1
+     ],
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
+    },
+    {
+     "name": "mat_23_solder",
+     "color": [
+      0.3763,
+      0.3763,
+      0.3763,
+      1
+     ],
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
     },
     {
      "name": "mat_24_gold",
@@ -1165,47 +789,11 @@
      "tone": "gold"
     },
     {
-     "name": "mat_25_gold",
+     "name": "mat_25_solder",
      "color": [
-      1,
-      1,
-      0.2159,
-      1
-     ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
-    },
-    {
-     "name": "mat_26_body",
-     "color": [
-      0.2159,
-      0.0513,
-      0,
-      1
-     ],
-     "metal": 0.18,
-     "rough": 0.55,
-     "tone": "body"
-    },
-    {
-     "name": "mat_27_gold",
-     "color": [
-      1,
-      1,
-      0,
-      1
-     ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
-    },
-    {
-     "name": "mat_28_solder",
-     "color": [
-      0.552,
-      0.552,
-      0.552,
+      0.402,
+      0.402,
+      0.402,
       1
      ],
      "metal": 0.78,
@@ -1213,7 +801,31 @@
      "tone": "solder"
     },
     {
-     "name": "mat_29_solder",
+     "name": "mat_26_gold",
+     "color": [
+      1,
+      1,
+      0,
+      1
+     ],
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
+    },
+    {
+     "name": "mat_27_body",
+     "color": [
+      0.8308,
+      0.7835,
+      0.6376,
+      1
+     ],
+     "metal": 0.18,
+     "rough": 0.55,
+     "tone": "body"
+    },
+    {
+     "name": "mat_28_solder",
      "color": [
       0.3712,
       0.3372,
@@ -1223,6 +835,18 @@
      "metal": 0.78,
      "rough": 0.4,
      "tone": "solder"
+    },
+    {
+     "name": "mat_29_gold",
+     "color": [
+      1,
+      1,
+      0.2159,
+      1
+     ],
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
     },
     {
      "name": "mat_30_body",
@@ -1235,527 +859,6 @@
      "metal": 0.18,
      "rough": 0.55,
      "tone": "body"
-    },
-    {
-     "name": "mat_31_body",
-     "color": [
-      0.5906,
-      0.6376,
-      0.855,
-      1
-     ],
-     "metal": 0.18,
-     "rough": 0.55,
-     "tone": "body"
-    },
-    {
-     "name": "mat_32_body",
-     "color": [
-      0.4179,
-      0.4621,
-      0.5089,
-      1
-     ],
-     "metal": 0.18,
-     "rough": 0.55,
-     "tone": "body"
-    }
-   ],
-   "anchorsBase": [
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -22.04,
-      2.94,
-      -16.23
-     ],
-     "size": [
-      2,
-      8.7,
-      4.01
-     ]
-    },
-    {
-     "kind": "CONN-SMD",
-     "cls": "fpc",
-     "zone": 1,
-     "pos": [
-      -21.97,
-      -2.1,
-      4.46
-     ],
-     "size": [
-      4.95,
-      4.2,
-      12
-     ]
-    },
-    {
-     "kind": "CONN-SMD",
-     "cls": "fpc",
-     "zone": 1,
-     "pos": [
-      -22.16,
-      3.76,
-      15.24
-     ],
-     "size": [
-      5,
-      4.35,
-      8.25
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      18,
-      6.44,
-      -1.64
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -3.78
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -5.93
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -8.07
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -10.22
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -12.36
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      18,
-      6.44,
-      -14.51
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      18,
-      6.44,
-      0.51
-     ],
-     "size": [
-      2.15,
-      9.71,
-      2.15
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -12.57
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -10.34
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -8.11
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -5.89
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -3.66
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      -1.43
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      -16,
-      6.63,
-      0.8
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 0,
-     "pos": [
-      -16,
-      6.63,
-      -14.8
-     ],
-     "size": [
-      2.23,
-      10.09,
-      2.23
-     ]
-    },
-    {
-     "kind": "RF-SMD",
-     "cls": "rf",
-     "zone": 3,
-     "pos": [
-      7.39,
-      2.21,
-      22.45
-     ],
-     "size": [
-      3.1,
-      1.25,
-      3.1
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      1.75,
-      4.67,
-      -21.98
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.2
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      1.75,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      1.3,
-      4.67,
-      -21.98
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.2
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      1.3,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      0.7,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      0.25,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      3.65,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      -0.2,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      2.2,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      2.2,
-      4.67,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "pad",
-     "zone": 0,
-     "pos": [
-      -1.65,
-      4.07,
-      -22.05
-     ],
-     "size": [
-      0.3,
-      0.1,
-      2.35
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "usb",
-     "zone": 0,
-     "pos": [
-      1,
-      3.78,
-      -20.02
-     ],
-     "size": [
-      8.94,
-      3.73,
-      7.15
-     ]
-    },
-    {
-     "kind": "TYPE-C-SMD",
-     "cls": "usb",
-     "zone": 0,
-     "pos": [
-      1,
-      3.77,
-      -20.12
-     ],
-     "size": [
-      8.94,
-      4.37,
-      7.35
-     ]
     }
    ]
   },
@@ -1769,15 +872,14 @@
     13.97
    ],
    "thickness": 1.6,
-   "components": 13,
+   "components": 7,
    "zones": [
     {
      "id": "laser-z0",
-     "tris": 8704,
-     "parts": 4,
+     "tris": 10740,
+     "parts": 3,
      "inventory": {
       "other": 1,
-      "passive": 1,
       "rf": 1,
       "laser": 1
      },
@@ -1810,6 +912,14 @@
        ]
       }
      ],
+     "side": {
+      "front": 0,
+      "back": 2,
+      "both": 1,
+      "frontTris": 1979,
+      "backTris": 8761,
+      "dominant": "back"
+     },
      "center": [
       0,
       0.95,
@@ -1828,23 +938,14 @@
       8.5,
       9.34
      ],
-     "top": 5.2,
-     "side": {
-      "front": 0,
-      "back": 3,
-      "both": 1,
-      "frontTris": 1979,
-      "backTris": 6725,
-      "dominant": "back"
-     }
+     "top": 5.2
     },
     {
      "id": "laser-z1",
-     "tris": 12190,
-     "parts": 9,
+     "tris": 12234,
+     "parts": 4,
      "inventory": {
-      "passive": 5,
-      "pad": 2,
+      "passive": 2,
       "rf": 1,
       "ic": 1
      },
@@ -1859,24 +960,6 @@
        ]
       },
       {
-       "cls": "pad",
-       "footprint": "R0603",
-       "size": [
-        1.08,
-        0.01,
-        0.8
-       ]
-      },
-      {
-       "cls": "pad",
-       "footprint": "R0603",
-       "size": [
-        1.08,
-        0.01,
-        0.8
-       ]
-      },
-      {
        "cls": "ic",
        "footprint": "DFN1006-2L-RD",
        "size": [
@@ -1886,6 +969,14 @@
        ]
       }
      ],
+     "side": {
+      "front": 0,
+      "back": 4,
+      "both": 0,
+      "frontTris": 0,
+      "backTris": 12234,
+      "dominant": "back"
+     },
      "center": [
       -3.5,
       -0.21,
@@ -1904,15 +995,7 @@
       1.25,
       7.89
      ],
-     "top": 0,
-     "side": {
-      "front": 0,
-      "back": 9,
-      "both": 0,
-      "frontTris": 0,
-      "backTris": 12190,
-      "dominant": "back"
-     }
+     "top": 0
     }
    ],
    "anchors": [
@@ -2131,19 +1214,39 @@
     49.97
    ],
    "thickness": 1.59,
-   "components": 166,
+   "components": 350,
    "zones": [
     {
      "id": "top-z0",
-     "tris": 28746,
-     "parts": 13,
+     "tris": 127212,
+     "parts": 114,
      "inventory": {
-      "passive": 8,
-      "pad": 3,
-      "header": 1,
-      "power_ic": 1
+      "pad": 82,
+      "passive": 26,
+      "ic": 3,
+      "rf": 1,
+      "power_ic": 1,
+      "header": 1
      },
      "key": [
+      {
+       "cls": "pad",
+       "footprint": "BottomSilkscreen",
+       "size": [
+        2.65,
+        0,
+        18.51
+       ]
+      },
+      {
+       "cls": "header",
+       "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
+       "size": [
+        2.36,
+        10.84,
+        19.62
+       ]
+      },
       {
        "cls": "power_ic",
        "footprint": "SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR",
@@ -2154,90 +1257,175 @@
        ]
       },
       {
-       "cls": "header",
-       "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
-       "size": [
-        1.41,
-        9.42,
-        1.88
-       ]
-      },
-      {
        "cls": "pad",
-       "footprint": "R0402",
+       "footprint": "BottomSilkscreen",
        "size": [
-        0.6,
-        0.03,
-        0.5
-       ]
-      },
-      {
-       "cls": "pad",
-       "footprint": "R0402",
-       "size": [
-        0.6,
-        0.03,
-        0.5
-       ]
-      },
-      {
-       "cls": "pad",
-       "footprint": "SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR",
-       "size": [
-        0.41,
+        2.9,
         0,
-        0.55
+        6.8
+       ]
+      },
+      {
+       "cls": "rf",
+       "footprint": "RF-SMD_IPEX1-3-TXZ-214",
+       "size": [
+        3.1,
+        1.25,
+        3.1
        ]
       }
      ],
+     "side": {
+      "front": 15,
+      "back": 16,
+      "both": 1,
+      "frontTris": 59564,
+      "backTris": 62788,
+      "dominant": "both"
+     },
      "center": [
       -14.43,
-      -0.87,
+      -0.88,
       -20.19
      ],
      "box": [
-      -21.17,
-      -6.42,
-      -23.44,
-      -7.27,
+      -22.01,
+      -7.84,
+      -23.8,
+      3.86,
       3,
-      -13.76
+      2.85
      ],
      "size": [
-      13.9,
-      9.42,
-      9.68
+      25.88,
+      10.84,
+      26.65
      ],
-     "top": 3,
-     "side": {
-      "front": 0,
-      "back": 13,
-      "both": 1,
-      "frontTris": 393,
-      "backTris": 27453,
-      "dominant": "back"
-     }
+     "top": 3
     },
     {
      "id": "top-z1",
-     "tris": 96708,
-     "parts": 53,
+     "tris": 84056,
+     "parts": 89,
      "inventory": {
-      "passive": 31,
-      "pad": 11,
-      "inductor": 2,
-      "ic": 2,
-      "rf": 1,
-      "header": 6
+      "pad": 67,
+      "passive": 17,
+      "ic": 1,
+      "inductor": 3,
+      "header": 1
      },
      "key": [
+      {
+       "cls": "pad",
+       "footprint": "BottomSilkscreen",
+       "size": [
+        2.65,
+        0,
+        18.51
+       ]
+      },
       {
        "cls": "header",
        "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
        "size": [
         2.36,
-        8.01,
+        10.84,
         19.62
+       ]
+      },
+      {
+       "cls": "ic",
+       "footprint": "TDFN-12_L3.0-W3.0-P0.50-BL-EP",
+       "size": [
+        3,
+        0.91,
+        3
+       ]
+      },
+      {
+       "cls": "pad",
+       "footprint": "TopSilkscreen",
+       "size": [
+        2.65,
+        0,
+        1.65
+       ]
+      },
+      {
+       "cls": "pad",
+       "footprint": "TopSilkscreen",
+       "size": [
+        2.65,
+        0,
+        1.65
+       ]
+      }
+     ],
+     "side": {
+      "front": 21,
+      "back": 0,
+      "both": 1,
+      "frontTris": 75002,
+      "backTris": 4354,
+      "dominant": "front"
+     },
+     "center": [
+      18.13,
+      -2.42,
+      -6.96
+     ],
+     "box": [
+      2.34,
+      -7.84,
+      -22.5,
+      19.45,
+      3,
+      3.83
+     ],
+     "size": [
+      17.11,
+      10.84,
+      26.33
+     ],
+     "top": 3
+    },
+    {
+     "id": "top-z2",
+     "tris": 75593,
+     "parts": 71,
+     "inventory": {
+      "pad": 51,
+      "passive": 16,
+      "ic": 2,
+      "inductor": 1,
+      "rf": 1
+     },
+     "key": [
+      {
+       "cls": "pad",
+       "footprint": "BottomSilkscreen",
+       "size": [
+        14.25,
+        0,
+        14.25
+       ]
+      },
+      {
+       "cls": "ic",
+       "footprint": "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+       "size": [
+        6,
+        1.7,
+        4.9
+       ]
+      },
+      {
+       "cls": "pad",
+       "footprint": "BottomSilkscreen",
+       "size": [
+        3.19,
+        0,
+        5.2
        ]
       },
       {
@@ -2251,157 +1439,50 @@
       },
       {
        "cls": "ic",
-       "footprint": "WSON-10_L3.0-W3.0-P0.50-BL-EP",
-       "size": [
-        3.02,
-        1.01,
-        3.02
-       ]
-      },
-      {
-       "cls": "ic",
-       "footprint": "TDFN-12_L3.0-W3.0-P0.50-BL-EP",
-       "size": [
-        3,
-        0.91,
-        3
-       ]
-      },
-      {
-       "cls": "inductor",
-       "footprint": "L0806",
-       "size": [
-        1.6,
-        0.95,
-        2
-       ]
-      }
-     ],
-     "center": [
-      -3.62,
-      -0.63,
-      -13.17
-     ],
-     "box": [
-      -7.68,
-      -7.84,
-      -22.07,
-      19.3,
-      3,
-      2.85
-     ],
-     "size": [
-      26.98,
-      10.84,
-      24.92
-     ],
-     "top": 3,
-     "side": {
-      "front": 31,
-      "back": 8,
-      "both": 5,
-      "frontTris": 81701,
-      "backTris": 14827,
-      "dominant": "front"
-     }
-    },
-    {
-     "id": "top-z2",
-     "tris": 53946,
-     "parts": 33,
-     "inventory": {
-      "passive": 12,
-      "pad": 9,
-      "ic": 3,
-      "inductor": 1,
-      "header": 8
-     },
-     "key": [
-      {
-       "cls": "header",
-       "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
-       "size": [
-        2.36,
-        8.01,
-        19.62
-       ]
-      },
-      {
-       "cls": "ic",
-       "footprint": "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
-       "size": [
-        2.9,
-        1.1,
-        2.8
-       ]
-      },
-      {
-       "cls": "ic",
        "footprint": "SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR",
        "size": [
-        1.54,
-        1.06,
-        2.78
-       ]
-      },
-      {
-       "cls": "ic",
-       "footprint": "SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR",
-       "size": [
         2.89,
-        1,
-        1.3
-       ]
-      },
-      {
-       "cls": "header",
-       "footprint": "HDR-TH_LAIL-PM2.54-7P-L",
-       "size": [
-        1.41,
-        9.42,
-        1.88
+        1.2,
+        2.78
        ]
       }
      ],
+     "side": {
+      "front": 0,
+      "back": 20,
+      "both": 0,
+      "frontTris": 0,
+      "backTris": 72112,
+      "dominant": "back"
+     },
      "center": [
-      -15.87,
-      -3.83,
-      -6.96
+      -4.82,
+      -0.63,
+      13.03
      ],
      "box": [
-      -21.86,
-      -7.84,
-      -16.77,
-      -11.68,
-      3,
-      13.15
+      -22.26,
+      -1.7,
+      -7.09,
+      7.25,
+      0,
+      22.11
      ],
      "size": [
-      10.18,
-      10.84,
-      29.93
+      29.52,
+      1.7,
+      29.2
      ],
-     "top": 3,
-     "side": {
-      "front": 7,
-      "back": 18,
-      "both": 7,
-      "frontTris": 12619,
-      "backTris": 36981,
-      "dominant": "back"
-     }
+     "top": 0
     },
     {
      "id": "top-z3",
-     "tris": 188726,
-     "parts": 67,
+     "tris": 126205,
+     "parts": 76,
      "inventory": {
-      "passive": 45,
-      "pad": 13,
-      "ic": 3,
-      "inductor": 1,
-      "rf": 1,
-      "header": 3,
+      "pad": 51,
+      "passive": 22,
+      "ic": 2,
       "adc": 1
      },
      "key": [
@@ -2416,29 +1497,11 @@
       },
       {
        "cls": "ic",
-       "footprint": "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
-       "size": [
-        6,
-        1.7,
-        4.9
-       ]
-      },
-      {
-       "cls": "ic",
        "footprint": "SOT-23-3_L2.9-W1.6-P1.90-LS2.8-BR",
        "size": [
         3.22,
         1.27,
         3.34
-       ]
-      },
-      {
-       "cls": "rf",
-       "footprint": "RF-SMD_IPEX1-3-TXZ-214",
-       "size": [
-        3.1,
-        1.25,
-        3.1
        ]
       },
       {
@@ -2449,57 +1512,60 @@
         1.1,
         2.9
        ]
+      },
+      {
+       "cls": "pad",
+       "footprint": "BottomSilkscreen",
+       "size": [
+        0.85,
+        0,
+        4.65
+       ]
+      },
+      {
+       "cls": "pad",
+       "footprint": "TopSilkscreen",
+       "size": [
+        1.36,
+        0,
+        1.67
+       ]
       }
      ],
+     "side": {
+      "front": 12,
+      "back": 13,
+      "both": 0,
+      "frontTris": 45784,
+      "backTris": 76934,
+      "dominant": "back"
+     },
      "center": [
       6.43,
       -0.54,
       14.74
      ],
      "box": [
-      -13,
-      -6.42,
-      -4.31,
-      18.83,
-      3,
-      22.74
+      0.82,
+      -1.27,
+      4,
+      14.07,
+      2.69,
+      23.18
      ],
      "size": [
-      31.83,
-      9.42,
-      27.05
+      13.25,
+      3.95,
+      19.17
      ],
-     "top": 3,
-     "side": {
-      "front": 17,
-      "back": 85,
-      "both": 17,
-      "frontTris": 70261,
-      "backTris": 173165,
-      "dominant": "back"
-     }
+     "top": 2.69
     }
    ],
    "anchors": [
     {
      "kind": "RF-SMD",
      "cls": "rf",
-     "zone": 1,
-     "pos": [
-      -3.62,
-      -0.63,
-      -13.17
-     ],
-     "size": [
-      3.1,
-      1.25,
-      3.1
-     ]
-    },
-    {
-     "kind": "RF-SMD",
-     "cls": "rf",
-     "zone": 3,
+     "zone": 2,
      "pos": [
       -4.82,
       -0.63,
@@ -2512,123 +1578,33 @@
      ]
     },
     {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
+     "kind": "RF-SMD",
+     "cls": "rf",
+     "zone": 0,
      "pos": [
-      -15.87,
-      -1.71,
-      1.42
+      -3.62,
+      -0.63,
+      -13.17
      ],
      "size": [
-      1.41,
-      9.42,
-      1.88
+      3.1,
+      1.25,
+      3.1
      ]
     },
     {
      "kind": "HDR-TH",
      "cls": "header",
-     "zone": 2,
+     "zone": 1,
      "pos": [
-      -15.87,
-      -3.83,
+      18.13,
+      -2.42,
       -6.96
      ],
      "size": [
       2.36,
-      8.01,
+      10.84,
       19.62
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      -15.87,
-      -1.71,
-      -0.98
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      -15.87,
-      -1.71,
-      -3.37
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      -15.87,
-      -1.71,
-      -5.76
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      -15.87,
-      -1.71,
-      -8.16
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      -15.87,
-      -1.71,
-      -10.55
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 2,
-     "pos": [
-      -15.87,
-      -1.71,
-      -12.95
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
      ]
     },
     {
@@ -2637,148 +1613,13 @@
      "zone": 0,
      "pos": [
       -15.87,
-      -1.71,
-      -15.34
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      18.13,
-      -1.71,
-      -15.34
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      18.13,
-      -3.83,
+      -2.42,
       -6.96
      ],
      "size": [
       2.36,
-      8.01,
+      10.84,
       19.62
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      18.13,
-      -1.71,
-      -12.95
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      18.13,
-      -1.71,
-      -10.55
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      18.13,
-      -1.71,
-      -8.16
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 1,
-     "pos": [
-      18.13,
-      -1.71,
-      -5.77
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 3,
-     "pos": [
-      18.13,
-      -1.71,
-      -3.37
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 3,
-     "pos": [
-      18.13,
-      -1.71,
-      -0.98
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
-     ]
-    },
-    {
-     "kind": "HDR-TH",
-     "cls": "header",
-     "zone": 3,
-     "pos": [
-      18.13,
-      -1.71,
-      1.42
-     ],
-     "size": [
-      1.41,
-      9.42,
-      1.88
      ]
     }
    ],
@@ -2808,16 +1649,16 @@
      "tone": "body"
     },
     {
-     "name": "mat_2_gold",
+     "name": "mat_2_solder",
      "color": [
-      0.3095,
-      0.1812,
-      0,
+      1,
+      1,
+      1,
       1
      ],
-     "metal": 1,
-     "rough": 0.3,
-     "tone": "gold"
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
     },
     {
      "name": "mat_3_solder",
@@ -2832,19 +1673,7 @@
      "tone": "solder"
     },
     {
-     "name": "mat_4_solder",
-     "color": [
-      1,
-      1,
-      1,
-      1
-     ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
-    },
-    {
-     "name": "mat_5_resin",
+     "name": "mat_4_resin",
      "color": [
       0.0513,
       0.0513,
@@ -2856,23 +1685,35 @@
      "tone": "resin"
     },
     {
-     "name": "mat_6_solder",
+     "name": "mat_5_resin",
      "color": [
-      0.5271,
-      0.5271,
-      0.5271,
+      0,
+      0,
+      0,
       1
      ],
-     "metal": 0.78,
-     "rough": 0.4,
-     "tone": "solder"
+     "metal": 0.1,
+     "rough": 0.62,
+     "tone": "resin"
+    },
+    {
+     "name": "mat_6_body",
+     "color": [
+      0.162,
+      0.162,
+      0.162,
+      1
+     ],
+     "metal": 0.18,
+     "rough": 0.55,
+     "tone": "body"
     },
     {
      "name": "mat_7_resin",
      "color": [
-      0,
-      0,
-      0,
+      0.0409,
+      0.0409,
+      0.0409,
       1
      ],
      "metal": 0.1,
@@ -2882,9 +1723,9 @@
     {
      "name": "mat_8_solder",
      "color": [
-      0.3763,
-      0.3763,
-      0.3763,
+      0.6939,
+      0.6939,
+      0.6939,
       1
      ],
      "metal": 0.78,
@@ -2892,23 +1733,23 @@
      "tone": "solder"
     },
     {
-     "name": "mat_9_resin",
+     "name": "mat_9_gold",
      "color": [
-      0.0409,
-      0.0409,
-      0.0409,
+      0.3095,
+      0.1812,
+      0,
       1
      ],
-     "metal": 0.1,
-     "rough": 0.62,
-     "tone": "resin"
+     "metal": 1,
+     "rough": 0.3,
+     "tone": "gold"
     },
     {
      "name": "mat_10_solder",
      "color": [
-      0.6939,
-      0.6939,
-      0.6939,
+      0.5271,
+      0.5271,
+      0.5271,
       1
      ],
      "metal": 0.78,
@@ -2918,18 +1759,6 @@
     {
      "name": "mat_11_body",
      "color": [
-      0.162,
-      0.162,
-      0.162,
-      1
-     ],
-     "metal": 0.18,
-     "rough": 0.55,
-     "tone": "body"
-    },
-    {
-     "name": "mat_12_body",
-     "color": [
       0.2122,
       0.2122,
       0.2122,
@@ -2940,7 +1769,7 @@
      "tone": "body"
     },
     {
-     "name": "mat_13_resin",
+     "name": "mat_12_resin",
      "color": [
       0.0723,
       0.0723,
@@ -2952,7 +1781,7 @@
      "tone": "resin"
     },
     {
-     "name": "mat_14_solder",
+     "name": "mat_13_solder",
      "color": [
       0.402,
       0.402,
@@ -2964,7 +1793,31 @@
      "tone": "solder"
     },
     {
-     "name": "mat_15_gold",
+     "name": "mat_14_solder",
+     "color": [
+      0.3763,
+      0.3763,
+      0.3763,
+      1
+     ],
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
+    },
+    {
+     "name": "mat_15_solder",
+     "color": [
+      0.6038,
+      0.6038,
+      0.6038,
+      1
+     ],
+     "metal": 0.78,
+     "rough": 0.4,
+     "tone": "solder"
+    },
+    {
+     "name": "mat_16_gold",
      "color": [
       0.6514,
       0.402,
@@ -2976,7 +1829,7 @@
      "tone": "gold"
     },
     {
-     "name": "mat_16_solder",
+     "name": "mat_17_solder",
      "color": [
       0.3712,
       0.3372,
@@ -2988,7 +1841,7 @@
      "tone": "solder"
     },
     {
-     "name": "mat_17_solder",
+     "name": "mat_18_solder",
      "color": [
       0.552,
       0.552,
@@ -3000,7 +1853,7 @@
      "tone": "solder"
     },
     {
-     "name": "mat_18_gold",
+     "name": "mat_19_gold",
      "color": [
       0.9301,
       0.7454,

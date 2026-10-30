@@ -14,6 +14,10 @@
 
 改完东西要更新线上：
 
+> 如果 
+pm run deploy 报 Failed to connect to github.com port 443，说明这台机器的 git 解析到了被墙的 IP，pi.github.com 却是通的。用 
+pm run deploy:api 代替——它走 GitHub REST API 推送，不经过 git push。
+
 ```bash
 npm run deploy      # 构建 + 推送到 main，GitHub 约 30 秒后自动重新发布
 ```
@@ -66,8 +70,10 @@ npm run preview    # 预览 dist/，http://127.0.0.1:4173
 
 ### 0. 一次性准备
 
-- 装 **FreeCAD 1.0+**，把 `freecadcmd` 加进 PATH
-  （或设环境变量 `FREECAD_CMD="C:\Program Files\FreeCAD 1.0\bin\freecadcmd.exe"`）
+- 装 **FreeCAD 1.0+**。关键：必须能用 **GUI 版 `freecad.exe`**，因为 console 版
+  `freecadcmd` 加载不了 `ImportGui`，而 STEP 导出依赖它。
+  本机已验证路径：`C:\Users\peony\AppData\Local\Programs\FreeCAD 1.1\bin\freecad.exe`
+  （`npm run step:export` 会自动找到它；换机器可设 `FREECAD_CMD` 指过去）
 - `npm install`
 
 ### 1. STEP → glTF

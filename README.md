@@ -5,20 +5,31 @@
 
 ## 打开方式
 
-### 发给别人看
+### 在线链接（已部署）
 
-把 **`麦极硬件数字展厅.html`**（4.7 MB，单个文件）直接发过去，**双击就能看** ——
-不需要装软件、不需要服务器、不需要联网，模型全部内嵌在这个文件里。
+**https://chenyidan2006.github.io/maiji-hardware-museum/**
 
-微信 / 邮件 / 网盘都能传。几个注意点：
+仓库：https://github.com/chenyidan2006/maiji-hardware-museum
+（GitHub Pages 免费版要求仓库公开，所以这个仓库是 public 的。）
 
-- 对方要用**真正的浏览器**打开（Chrome / Edge / Safari）。手机微信里点开 `.html`
-  可能只会显示源码或提示"无法打开"，需要选「用其他应用打开」→ 浏览器。
-- 3D 用的是 WebGL，五年前的电脑和手机都能跑；极老的机器或远程桌面里可能黑屏。
+改完东西要更新线上：
+
+```bash
+npm run deploy      # 构建 + 推送到 main，GitHub 约 30 秒后自动重新发布
+```
+
+想换自定义域名：在仓库 Settings → Pages → Custom domain 里填，然后在 DNS 加一条
+CNAME 指到 `chenyidan2006.github.io`。
+
+### 发一个文件给别人
+
+**`麦极硬件数字展厅.html`**（4.7 MB，单个文件）**双击就能看** —— 不需要装软件、
+不需要服务器、不需要联网，模型全部内嵌在里面。微信 / 邮件 / 网盘都能传。
+
 - 重新生成：`npm run pack`
-
-如果要给别人一个**网址**（而不是文件），就把 `dist/` 整个目录上传到任意静态托管
-（Vercel / Netlify / GitHub Pages / 对象存储都行），它是纯静态的，没有后端。
+- 对方要用**真正的浏览器**打开（Chrome / Edge / Safari）。手机微信里点 `.html`
+  常常只显示源码或提示打不开，需要选「用其他应用打开」→ 浏览器。
+- 3D 用 WebGL，近五年的设备都能跑；极老的机器或远程桌面里可能黑屏。
 
 ### 本地开发
 
@@ -27,7 +38,6 @@ npm install
 npm run dev        # http://127.0.0.1:5173
 npm run build      # 生成静态站点到 dist/
 npm run preview    # 预览 dist/，http://127.0.0.1:4173
-npm run pack       # 打包成单文件 麦极硬件数字展厅.html
 ```
 
 ## 怎么逛

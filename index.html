@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#050a08" />
+    <meta name="description" content="麦极三层硬件交互式数字展厅：基于真实 STEP 工程模型，可点选板层与区域，解读每一段信号链。" />
+    <title>麦极 · 硬件数字展厅</title>
+    <script type="module" crossorigin src="./assets/index-CtdGlVOy.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BrbVQ6pL.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="麦极硬件数字展厅">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-text"><b>MAIJI</b><small>硬件数字展厅</small></span>
+        </a>
+        <nav class="crumbs" id="crumbs" aria-label="浏览位置"></nav>
+        <div class="topbar-right">
+          <div class="source-chip"><span></span>STEP 工程模型 · 实测几何</div>
+          <button class="icon-button" id="help-button" type="button" aria-label="操作说明">?</button>
+        </div>
+      </header>
+
+      <main class="museum">
+        <section class="rail rail-left" aria-labelledby="page-title">
+          <div class="rail-scroll">
+            <p class="eyebrow" id="eyebrow"></p>
+            <h1 id="page-title"></h1>
+            <p class="lede" id="lede"></p>
+            <div class="layer-list" id="layer-list" role="group" aria-label="板层选择"></div>
+            <div class="rail-meta" id="rail-meta"></div>
+          </div>
+        </section>
+
+        <section class="stage" id="stage" aria-label="三层板三维交互模型">
+          <canvas id="scene"></canvas>
+          <div class="zone-layer" id="zone-layer" aria-hidden="true"></div>
+          <div class="stage-vignette" aria-hidden="true"></div>
+          <div class="stage-hint" id="stage-hint"></div>
+          <div class="view-controls" role="group" aria-label="视图控制">
+            <button type="button" id="btn-assembled" class="active">合拢</button>
+            <button type="button" id="btn-exploded">展开</button>
+            <button type="button" id="btn-flip" hidden>翻到背面</button>
+            <button type="button" id="btn-reset">重置视角</button>
+          </div>
+          <div class="loading" id="loading" role="status" aria-live="polite">
+            <div class="loading-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+            <strong>正在装载真实工程模型</strong>
+            <span id="loading-status">准备 STEP 几何…</span>
+            <div class="loading-track"><i id="loading-bar"></i></div>
+          </div>
+        </section>
+
+        <aside class="rail rail-right" id="inspector" aria-live="polite"></aside>
+      </main>
+
+      <footer class="footer">
+        <span>MAIJI HARDWARE ARCHIVE · 001</span>
+        <span id="footer-state">三层合拢 · 自动旋转</span>
+      </footer>
+
+      <dialog id="help-dialog">
+        <button type="button" class="dialog-close" aria-label="关闭">×</button>
+        <p class="eyebrow">浏览方式</p>
+        <h2>像逛博物馆一样看一块电路板</h2>
+        <div class="help-grid" id="help-grid"></div>
+        <p class="help-foot">模型来自实测 STEP 工程文件，元件、焊盘、排针与同轴接头均为真实几何。</p>
+      </dialog>
+    </div>
+  </body>
+</html>

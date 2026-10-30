@@ -60,6 +60,69 @@ npm run preview    # 预览 dist/，http://127.0.0.1:4173
 - 单板列表里每个区域带 `正面为主 / 背面为主 / 双面分布` 标签；
 - 板面永远不透明 —— 透光会让前后两层糊在一起。要看另一面，是把板子转过来，不是把板子变透明。
 
+## 换新的 STEP 文件
+
+一句话：**STEP 先经 FreeCAD 导成中间 glTF，再由管线压成站点资产**。分两步，各一条命令。
+
+### 0. 一次性准备
+
+- 装 **FreeCAD 1.0+**，把 `freecadcmd` 加进 PATH
+  （或设环境变量 `FREECAD_CMD="C:\Program Files\FreeCAD 1.0\bin\freecadcmd.exe"`）
+- `npm install`
+
+### 1. STEP → glTF
+
+```bash
+npm run step:export -- --board top --step "D:\project\PPG\硬件\第二版\3D_PCB6_顶板.step"
+npm run step:export -- --board bottom --step "...\3D_PCB3_底板.step"
+npm run step:export -- --board laser  --step "...\3D_PCB4_激光头.step"
+```
+
+产物落在 `step-export/`（已 gitignore）：
+
+| `--board` | 输出文件 |
+| --- | --- |
+| `top` | `step-export/top_board.glb` |
+| `bottom` | `step-export/bottom_board.glb` |
+| `laser` | `step-export/laser_head.glb` |
+
+只换其中一块，就只跑那一块，其余两块的中间文件保留即可。
+
+### 2. glTF → 站点资产
+
+```bash
+npm run assets
+```
+
+这一步做的是：丢掉重复装配、剔除原点上的封装库模板、把元件按最近的连接器/芯片
+聚成功能区、按「分区 + 材质」合并几何、算每区正反面分布，最后 `gltfpack` 量化和
+meshopt 压缩。输出 `public/assets/`（3 个 glb + manifest.json）。
+
+跑完看控制台：每块板会打印板尺寸、元件数、每个分区的三角面/元件数/正反面。
+`npm run dev` 立刻就能看效果。
+
+### 如果新板子长得不一样
+
+管线不是全自动的，有两处是按当前这批 STEP 调的，在 `tools/pipeline/config.mjs`：
+
+```js
+cull: [-0.009, -0.006, 0.010, 0.007],   // 原点附近要丢弃的封装库模板范围（米）
+anchors: [/^TYPE-C/, /^CONN-SMD/, /^QFN-56/, /^RF-/],  // 每块板的功能区锚点（封装名前缀）
+zones: 4,                                // 分几个区
+```
+
+- **板子尺寸/原点变了** → 调 `cull`。它圈的是 STEP 里那堆停在原点的封装库实体；
+  圈小了会看到一堆重复元件飘在板外，圈大了会误删真元件。
+- **换了主芯片/连接器** → 调 `anchors`，用封装名前缀（`QFN-56`、`TYPE-C`、`HDR` 这些）。
+- 管线会自己校验：认不出板子实体、元件数不够分区，都会停下来告诉你该改哪里，
+  不会闷头输出一个空站点。
+
+### 分区的文字还得手动对
+
+`src/content.js` 里的 `ZONES` 是按分区 id（`top-z0`…）写的文案。分区数量和顺序
+如果变了，`npm run assets` 会打印新的分区列表（含每区的元件构成），照着改文案即可。
+id 没变的话文案不用动。
+
 ## 目录
 
 ```
@@ -71,7 +134,10 @@ src/content.js             全部中文文案（按区域 id 对应真实分区�
 src/style.css              展厅视觉
 public/assets/manifest.json 分区、元件统计、正反面分布、连接器锚点
 public/assets/*.glb        每块板一个 GLB，按功能分区合并成少量 draw call
-tools/                     STEP → glTF 的转换脚本（需要 FreeCAD）
+step-export/               FreeCAD 导出的中间 glTF（gitignore，换 STEP 时重新生成）
+tools/pipeline/            资产管线：config.mjs（板子配置）、build.mjs、from-step.mjs
+tools/export_step_gltf.py  FreeCAD 调用的 STEP → glTF 脚本
+tools/deploy-pages.mjs     一键发布到 GitHub Pages
 ```
 
 ## 模型是怎么来的

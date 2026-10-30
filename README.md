@@ -123,6 +123,43 @@ zones: 4,                                // 分几个区
 如果变了，`npm run assets` 会打印新的分区列表（含每区的元件构成），照着改文案即可。
 id 没变的话文案不用动。
 
+### 微调某个零件的位置（不改 STEP）
+
+有时只是想让某个零件挪几毫米（比如排针在板上的位置）：不用回 EDA 改、也不用重新导出，
+改一个数字就行。改 `tools/pipeline/config.mjs` 里对应板子的 `nudges`：
+
+```js
+nudges: [
+  { name: '左侧排针', dz: 7, box: { x: [-17.6, -14.4], z: [-16.4, 2.4], y: [-2, 13] } },
+  { name: '右侧排针', dz: 7, box: { x: [16.6, 19.4], z: [-16.0, 2.0], y: [-2, 13] } },
+],
+```
+
+- **`dz`** 要挪多少毫米：正数往 **+z**，负数往 **−z**。
+  在**俯视图**里 **+z 是屏幕下方、−z 是上方**（想「往下挪」就填正数）。
+- **`box`** 只有落在里面的顶点会动。`x / z / y` 是毫米、以板中心为原点、Y 向上，
+  和 `manifest.json` 里是同一套坐标。只动元件节点，**PCB 本体永远不会被移动**。
+
+先看会命中什么，再决定：
+
+```bash
+npm run nudge:check -- --board bottom      # 只报告，不改文件
+npm run nudge -- --board bottom --dz -3    # 临时试一个值，不动 config
+npm run nudge -- --board bottom            # 按 config 应用
+npm run build && npm run deploy
+```
+
+它是**幂等**的：每次从 `step-export/bottom.base.raw.glb` 这份基准副本重算，
+所以反复改 `dz` 不会越挪越远。
+
+不确定该圈多大范围时，用探针看那个区域里到底有什么：
+
+```bash
+node tools/pipeline/probe-box.mjs --board bottom --x -17.6 -14.4 --z -16.4 2.4
+```
+
+按节点分组打印命中顶点数、包围盒和每 1mm 的高度分布，能确认有没有误圈别的东西。
+
 ## 目录
 
 ```
@@ -135,7 +172,8 @@ src/style.css              展厅视觉
 public/assets/manifest.json 分区、元件统计、正反面分布、连接器锚点
 public/assets/*.glb        每块板一个 GLB，按功能分区合并成少量 draw call
 step-export/               FreeCAD 导出的中间 glTF（gitignore，换 STEP 时重新生成）
-tools/pipeline/            资产管线：config.mjs（板子配置）、build.mjs、from-step.mjs
+tools/pipeline/            资产管线：config.mjs（板子配置）、build.mjs、from-step.mjs、
+                           nudge.mjs（微调零件位置）、probe-box.mjs、selftest.mjs
 tools/export_step_gltf.py  FreeCAD 调用的 STEP → glTF 脚本
 tools/deploy-pages.mjs     一键发布到 GitHub Pages
 ```
